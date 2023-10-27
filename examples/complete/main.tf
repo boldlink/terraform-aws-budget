@@ -1,7 +1,7 @@
 module "sns_topic" {
-  source = "boldlink/sns/aws"
+  source  = "boldlink/sns/aws"
   version = "1.1.1"
-  name   = var.name
+  name    = var.name
 }
 
 module "complete_example" {
@@ -30,17 +30,17 @@ module "complete_example" {
   }
 
   cost_types = {
-      include_credit             = false
-      include_discount           = false
-      include_other_subscription = false
-      include_recurring          = false
-      include_refund             = false
-      include_subscription       = false
-      include_support            = false
-      include_tax                = false
-      include_upfront            = false
-      use_amortized              = false
-      use_blended                = false
+    include_credit             = false
+    include_discount           = false
+    include_other_subscription = false
+    include_recurring          = false
+    include_refund             = false
+    include_subscription       = false
+    include_support            = false
+    include_tax                = false
+    include_upfront            = false
+    use_amortized              = false
+    use_blended                = false
   }
 
   notification = [
@@ -65,9 +65,9 @@ module "complete_example" {
 
 ## Planned Limit
 module "planned_limit" {
-  source            = "../../"
-  name              = "${var.name}-planned-limit"
-  budget_type       = "COST"
-  time_unit         = "MONTHLY"
+  source        = "../../"
+  name          = "${var.name}-planned-limit"
+  budget_type   = "COST"
+  time_unit     = "MONTHLY"
   planned_limit = var.planned_limit
 }

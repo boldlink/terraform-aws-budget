@@ -1,3 +1,3 @@
 locals {
-  email = "example.email@example.com" 
+  email = "example.email@example.com"
 }
