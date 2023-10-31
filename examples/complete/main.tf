@@ -74,10 +74,10 @@ module "planned_limit" {
 
 # Limit amount
 module "limit_amount" {
-  source            = "../../"
-  name              = "${var.name}-limit-amount"
-  budget_type       = "COST"
-  limit_unit        = "USD"
-  time_unit         = "MONTHLY"
-  limit_amount      = 100
+  source       = "../../"
+  name         = "${var.name}-limit-amount"
+  budget_type  = "COST"
+  limit_unit   = "USD"
+  time_unit    = "MONTHLY"
+  limit_amount = 100
 }

@@ -12,12 +12,12 @@ resource "aws_budgets_budget" "main" {
   dynamic "auto_adjust_data" {
     for_each = length(keys(var.auto_adjust_data)) > 0 ? [var.auto_adjust_data] : []
     content {
-      auto_adjust_type      = lookup(var.auto_adjust_data, "auto_adjust_type", null)
+      auto_adjust_type = lookup(var.auto_adjust_data, "auto_adjust_type", null)
 
       dynamic "historical_options" {
         for_each = try([var.auto_adjust_data["historical_options"]], [])
         content {
-          budget_adjustment_period   = try(historical_options.value.budget_adjustment_period, null)
+          budget_adjustment_period = try(historical_options.value.budget_adjustment_period, null)
         }
       }
     }

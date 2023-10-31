@@ -32,6 +32,7 @@ No providers.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_complete_example"></a> [complete\_example](#module\_complete\_example) | ../../ | n/a |
+| <a name="module_limit_amount"></a> [limit\_amount](#module\_limit\_amount) | ../../ | n/a |
 | <a name="module_planned_limit"></a> [planned\_limit](#module\_planned\_limit) | ../../ | n/a |
 | <a name="module_sns_topic"></a> [sns\_topic](#module\_sns\_topic) | boldlink/sns/aws | 1.1.1 |
 
