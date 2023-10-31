@@ -72,7 +72,7 @@ module "planned_limit" {
   planned_limit = var.planned_limit
 }
 
-
+# Limit amount
 module "limit_amount" {
   source            = "../../"
   name              = "${var.name}-limit-amount"
