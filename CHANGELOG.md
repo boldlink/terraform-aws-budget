@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.2] - 2023-10-27
 - added subscriber_sns_topic_arns in complete example
 - added planned limit budget in complete example
+- added an example that has a limit amount in complete example
+- remove lookback_available_periods from historical_options dynamic block as the value is automatically calculated from the budget_adjustment_period and historical cost data
 
 ## [1.0.1] - 2023-01-16
 ### Description

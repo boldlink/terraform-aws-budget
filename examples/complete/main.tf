@@ -1,3 +1,4 @@
+
 module "sns_topic" {
   source  = "boldlink/sns/aws"
   version = "1.1.1"
@@ -62,7 +63,6 @@ module "complete_example" {
   ]
 }
 
-
 ## Planned Limit
 module "planned_limit" {
   source        = "../../"
@@ -70,4 +70,14 @@ module "planned_limit" {
   budget_type   = "COST"
   time_unit     = "MONTHLY"
   planned_limit = var.planned_limit
+}
+
+
+module "limit_amount" {
+  source            = "../../"
+  name              = "${var.name}-limit-amount"
+  budget_type       = "COST"
+  limit_unit        = "USD"
+  time_unit         = "MONTHLY"
+  limit_amount      = 100
 }
